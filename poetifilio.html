@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Achref Mansouri</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class ="logo" >Achref Mansouri</div>
+        <div class = "hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>  
+                <span></span>  
+            </div>      
+        
+         <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+         </div>
+            
+
+          
+        </div>
+    </nav>
+    <section id="profile" data-aos="fade-up">
+        <div class="section__pic-container">
+            <img src="./image/profil.png" alt="Achref Mansouri profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Achref Mansouri</h1>
+            <p class="section__text__p2">ICT student</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2"
+                onclick="window.open('image/CV.pdf')"
+                >Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact info</button>
+            </div>
+            <div id="socials-co,tainer">
+                <img src="./image/download.png" 
+                alt="My Linkidin Profile" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/achref-mansouri-84a012244'">
+                <img src="./image/download1.png" 
+                alt="My Github Profile" class="icon"
+                onclick="location.href='https://github.com/Achref88MANSOURI'">
+            </div>
+        </div>
+        <img src="./image/9053268.png" alt="arrow incon" class="icon arrow" onclick="location.href='#about'">
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <section id="about" class="reveal">
+        <br><br>
+        <p class="section__text__p1">Get to Know Me</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="image/561b5afd-bd50-407e-ad53-4d30e7510d09.jpg"  alt="profile pict" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    
+                   
+                    <div class="details-container">
+                        <img src="./image/7001481.png" alt="Education icon" class="icon">
+                        <h3>Education</h3><br>
+
+                        <h4 class="subtitle" data-aos="fade-down">Baccalaureate in Technical Sciences – With Honors</h4>
+                        <p class="info" data-aos="fade-down">Baccalaureate average: 15.59</p><br>
+
+                        <h4 class="subtitle" data-aos="fade-down">Preparatory classes for engineering studies – IPEIM, Monastir</h4>
+                        <p class="info" data-aos="fade-down">Admitted to the National Entrance Exam for Engineering Schools, Rank: 12</p><br>
+
+                        <h4 class="subtitle" data-aos="fade-down">1st year of engineering cycle – Higher School of Communication of Tunis<br> <a href="https://www.supcom.tn" ><h2 style="color: blue;">SUP’COM</h2></a></h4>
+                        
+                        <p class="info" data-aos="fade-down">Telecommunications major</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src="./image/9053268.png" alt="arrow incon" class="icon arrow" onclick="location.href='#skills'">
+    </section>
+    <br><br>
+    <section id="skills" class="reveal"  data-aos="flip-left">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Skills</h1>
+        <div class="Experience-detalis-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="Experience-sub-title">Frontend Development</h2>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="./image/check-mark-hand-drawn-circle_78370-5986.avif" alt="checkmarks icon" class="icon">
+                            <div>
+                                <h3 data-aos="fade-right">HTML</h3>
+                                <p data-aos="flip-left">Beginer</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./image/check-mark-hand-drawn-circle_78370-5986.avif" alt="checkmarks icon" class="icon">
+                            <div>
+                                <h3 data-aos="fade-right" >CSS</h3>
+                                <p data-aos="flip-left">Beginer</p>
+                            </div>
+                        </article>
+                       
+                    </div>
+                    
+                </div>
+                <div class="details-container">
+                    <h2 class="Experience-sub-title" data-aos="flip-left">Mobile Developpment</h2>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="./image/check-mark-hand-drawn-circle_78370-5986.avif" alt="checkmarks icon" class="icon">
+                            <div>
+                                <h3 data-aos="fade-right">C/C++</h3>
+                                <p data-aos="flip-left">Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./image/check-mark-hand-drawn-circle_78370-5986.avif" alt="checkmarks icon" class="icon">
+                            <div>
+                                <h3 data-aos="fade-right">Python</h3>
+                                <p data-aos="flip-left">Intermediate</p>
+                            </div>
+                        </article>
+                       
+                    </div>
+                    
+                    
+                </div>
+                <div class="details-container">
+                    <h2 class="Experience-sub-title" data-aos="flip-left">Data BASE</h2>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    
+                    <div class="article-container">
+                        <article>
+                            <img src="./image/check-mark-hand-drawn-circle_78370-5986.avif" alt="checkmarks icon" class="icon">
+                            <div>
+                                <h3 data-aos="fade-right">MySQL</h3>
+                                <p data-aos="flip-left">Intermediate</p>
+                            </div>
+                        </article>
+                        
+                       
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="details-container">
+                    <h2 class="Experience-sub-title" data-aos="flip-left">Certificate</h2>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="./image/check-mark-hand-drawn-circle_78370-5986.avif" alt="checkmarks icon" class="icon">
+                            <div>
+                                <h3 data-aos="fade-right">Matlab</h3>
+                                
+                                <div class="btn-container">
+                                   <button
+                                   class="btn btn-color-2"
+                                   onclick="window.open('./image/certification.pdf')"
+                                   >Download certificate</button>
+                                    
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./image/check-mark-hand-drawn-circle_78370-5986.avif" alt="checkmarks icon" class="icon">
+                            <div>
+                                <h3 data-aos="fade-right">CNNA1</h3>
+                                
+                                <div class="btn-container">
+                                   <button
+                                   class="btn btn-color-2"
+                                   onclick="window.open('./image/CV -version en français.pdf')"
+                                   >Download certificate</button>
+                                    
+                                </div>
+                            </div>
+                        </article>
+                       
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+         <img src="./image/9053268.png" alt="arrow incon" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <section id="projects" class="reveal" data-aos="flip-left">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                    src="./image/maxresdefault.jpg" 
+                    alt="Project 1" 
+                    class="project-img" 
+                />
+                <h2 class="experience-sub-title project-title" data-aos="fade-right">C Project</h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/Achref88MANSOURI/C-Project'"
+                    >
+                        Github
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/Achref88MANSOURI/C-Project'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+           </div>
+           <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                    src="./image/creer-une-base-de-donnes-en-7-minutes-1692x846.png" 
+                    alt="Project 1" 
+                    class="project-img" 
+                />
+                <h2 class="experience-sub-title project-title" data-aos="fade-right">SQL Project</h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/Achref88MANSOURI/SQL-PRJECT'"
+                    >
+                        Github
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/Achref88MANSOURI/SQL-PRJECT'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+           </div>
+    
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                    src="./image/make-digital-system-projects-vhdl-and-verilog-projects.webp" 
+                    alt="Project 1" 
+                    class="project-img" 
+                />
+                <h2 class="experience-sub-title project-title" data-aos="fade-right">Vhdl Project: UAL</h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/Achref88MANSOURI/VHDL-Project-ual'"
+                    >
+                        Github
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/Achref88MANSOURI/VHDL-Project-ual'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+           </div>
+       </div>
+    </div>
+     <img src="./image/9053268.png" alt="arrow incon" class="icon arrow" onclick="location.href='#contact'">
+</section>
+<br><br><br><br>
+<section id="contact" class="reveal" data-aos="fade-right" >
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img 
+                src="./image/360_F_512305793_6L82S36GfQsGU7Fb8APlNpeogWNzA5Ip.jpg" 
+                alt="Email icon" 
+                class="icon contact-icon"   data-aos="zoom-in"
+            />
+            <p><a href="mailto:examplemail@gmail.com">achref.mansouri@supcom.tn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img 
+                src="./image/images.png" 
+                alt="LinkedIn icon" 
+                class="icon contact-icon"  data-aos="zoom-in" 
+            />
+            <p><a href="https://www.linkedin.com/in/achref-mansouri-84a012244">Achref Mansouri</a></p>
+        </div>
+       
+        </div>
+    </div>
+    <div class="contact-info-upper-container">
+         <div class="contact-info-container">
+            <img 
+                src="./image/images1.jpg" 
+                alt="phone icon" 
+                class="icon contact-icon"  data-aos="zoom-in"
+            />
+            <h7>Phone: </h7><p>26 182 212</p>
+        </div>
+        <div class="contact-info-container">
+            <img 
+                src="./image/address-icon-vector-home-location-260nw-1864218163.webp" 
+                alt="phone icon" 
+                class="icon contact-icon" data-aos="zoom-in"
+            />
+            <h7>Adresse: </h7><p>Sbikha , Kairouan Tunisia 3110</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    
+
+</section>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+</body>
+</html>
