@@ -10,10 +10,15 @@
 
 </head>
 <body>
+    <!--<nav> is a semantic HTML5 tag used to define a navigation section on the page. -->
     <nav id="desktop-nav">
+        <!--id="desktop-nav" gives a unique name to this <nav> element, useful for CSS styling or JavaScript. -->
         <div class="logo">Achref Mansouri</div>
+        <!-- A <div> is a generic container.
+             class="logo" is used for CSS styling. It means this div can be styled as a "logo" area. -->
         <div>
             <ul class="nav-links">
+                <!--class="nav-links" lets you style all the list items as navigation links using CSS. -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -23,9 +28,10 @@
     </nav>
     <nav id="hamburger-nav">
         <div class ="logo" >Achref Mansouri</div>
-        <div class = "hamburger-menu">
+        <div class = "hamburger-menu"> 
+           
             <div class="hamburger-icon" onclick="toggleMenu()"> 
-                <span></span>
+                <span></span> <!--Three <span>s visually make the three-line menu icon. -->
                 <span></span>  
                 <span></span>  
             </div>      
@@ -35,6 +41,7 @@
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+             <!-- onclick="toggleMenu()": When you click the icon or a link, it runs the JavaScript function toggleMenu() to open or close the menu.-->  
          </div>
             
 
@@ -56,13 +63,27 @@
                 >Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='#contact'">Contact info</button>
             </div>
-            <div id="socials-co,tainer">
+            <div id="socials-container">
                 <img src="./image/download.png" 
                 alt="My Linkidin Profile" class="icon"
                 onclick="location.href='https://www.linkedin.com/in/achref-mansouri-84a012244'">
                 <img src="./image/download1.png" 
                 alt="My Github Profile" class="icon"
                 onclick="location.href='https://github.com/Achref88MANSOURI'">
+                <!--  <button class="btn btn-color-2" onclick="window.open('image/CV.pdf')">Download CV</button>
+button: creates a clickable button.
+
+class="btn btn-color-2":
+
+btn: a general class for all buttons (used for consistent styling like padding, borders, etc.).
+
+btn-color-2: likely a special class that adds a second color theme (maybe gray or blue).
+
+onclick="window.open('image/CV.pdf')":
+
+JavaScript function that opens the CV PDF file in a new tab or window when the button is clicked.
+
+Text: "Download CV" appears inside the button.-->
             </div>
         </div>
         <img src="./image/9053268.png" alt="arrow incon" class="icon arrow" onclick="location.href='#about'">
@@ -124,6 +145,7 @@
                                 <p data-aos="flip-left">Beginer</p>
                             </div>
                         </article>
+                        <!--The <article> tag is a semantic HTML element that means "this is a self-contained piece of content." It makes the structure of your page clearer for browsers, search engines, and assistive technologies like screen readers. -->
                        
                     </div>
                     
@@ -310,7 +332,10 @@
                 alt="Email icon" 
                 class="icon contact-icon"   data-aos="zoom-in"
             />
-            <p><a href="mailto:examplemail@gmail.com">achref.mansouri@supcom.tn</a></p>
+            <p><a href="mailto:achref.mansouri@supcom.tn">achref.mansouri@supcom.tn</a></p>
+            <!--href="mailto:achref.mansouri@supcom.tn":
+
+This is a special kind of link that opens the user’s default email application (like Gmail, Outlook, Thunderbird) with the email address pre-filled. -->
         </div>
         <div class="contact-info-container">
             <img 
