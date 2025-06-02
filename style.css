@@ -2,65 +2,103 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
+/*This line imports the Poppins font family from Google Fonts with three font weights (300, 400, and 500) and sets the font-display strategy to swap.*/
 * {
     margin: 0;
     padding: 0;
 
 }
+/** Selector
+
+Targets all HTML elements (headings, paragraphs, lists, etc.)
+
+The asterisk (*) is called the "universal selector"
+
+margin: 0;
+
+Removes all default spacing outside elements
+
+Eliminates browser-added gaps around elements like <body>, <h1>, etc.
+
+padding: 0;
+
+Removes all default spacing inside elements
+
+Clears inner space in elements like <ul>, <p>, etc.*/
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;/*sans-serif: Fallback font if Poppins fails to load.*/
     background: linear-gradient(270deg, #00c9ff, #92fe9d, #fbc2eb, #a18cd1);
-    background-size: 800% 800%;
-    animation: gradientBG 15s ease infinite;
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
     color: #333;
 }
 
 
 html {
     scroll-behavior: smooth;
-}
+}/*This rule applies smooth scrolling to the entire HTML document.*/
 p{
     color: rgb(85,85,85);
-}
+}/*Sets the text(all the <p> tag) color to a dark gray (RGB value 85,85,85)*/
+
+
 /*Transititon*/
+
+
 a, 
 .btn{
     transition: all 300 ms ease;
-}
+}/*All hyperlinks (<a> tags)
+
+Any element with class btn (e.g., <button class="btn">)*/
+
+
 /*Desktop nav*/
 nav, .nav-links {
     display: flex;
-}
+}/* display:block(about 
+                  skills
+                  project
+                  contact) 
+    display :flex ( about skills project contact)*/
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+    justify-content: space-around;/*Distributes navigation items horizontally with equal space around them*/
+    align-items: center;/*puts th nav elements in the middle vertically inside the row.*/
+    height: 20vh;
 }
 .nav-links{
     gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+    list-style: none;/*Before: • Home • About    After: Home About* Removes default bullet points/discs from list items*/
+    font-size: 1.5rem;/*Sets the base text size for navigation items 1.5rem = 1.5 × root font-size (typically 24px if root is 16px)*/
 }
 a {
-    color:black;
+    color:blue;
     text-decoration: none;
     text-decoration-color: white;
+    
 
 }
-a:hover {
+
+<!-- -->
+a:hover {/*This means: apply the following styles when the user hovers over a link.*/
     color:grey;
     text-decoration: underline;
     text-underline-offset: 1rem ;
     text-decoration-color: rgb(181 , 181,181);
+    
 }
+
 .logo {
-    font-size: 2rem ;
+    font-size: 3rem ;/*font-size property sets the size of the text inside an element.*/
+    transition: transform 0.3s ease;
+    
 }
 .logo:hover {
     cursor: default ;
+    transform: translateY(-10px);
+    
 } 
 
 
@@ -634,11 +672,11 @@ article.icon {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: transform  0.3s ease;
 }
 
 .message button:hover {
     background-color: #45a049;
 }
-``
+
 
